@@ -1,0 +1,162 @@
+@import "base.css";
+
+$body-color: blue;
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  src: url("../fonts/faune-bold.woff2"),url("../fonts/faune-regular.woff")
+}
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 400;
+  font-style: italic;
+  src: url("../fonts/faune-italic.woff2"),url("../fonts/faune-italic.woff")
+}
+
+@font-face {
+  font-family: "Faune";
+  font-weight: 700; 
+  src: url("../fonts/faune-bold.woff2"),url("../fonts/faune-bold.woff2")
+}
+
+body {
+	font-family: "Faune", Arial;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: #2a2a2a;
+	color: #ffffff;
+	margin: 0 0 0 280px;
+	
+}
+
+section.options{
+  position: fixed;
+  top:0;
+  left:0;
+  width:280px;
+  height:100vh;
+  background-color: #2a2a2a;
+  padding: 40px;
+  border-right: 1px solid rgba(255, 255, 25, 0.1)
+
+}
+h1{
+  font-weight: 700;
+  font-size:24px;
+}
+
+div.option{
+  margin: 10px 0 0 0;
+}
+
+label{
+  display:block;
+  margin: 0 0 5px 0;
+}
+input[type="text"]{
+  width:100%;
+  background-color: #575757;
+  border: none;
+  color:white;
+  padding: 5px 7px 5px 7px;
+}
+
+textarea.output{
+  font-size: 64px;
+  width: 100%;
+  background: none;
+  color:white;
+  border:none;
+  outline:none;
+  min-height:100vh;
+}
+iv.option-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+label {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+label span {
+  float: right;
+  font-style: italic;
+}
+
+input[type="text"] {
+  width: 100%;
+  background-color: #575757;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 5px 7px 5px 7px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+textarea.output {
+  font-size: 64px;
+  width: 100%;
+  background: none;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+div.colors {
+  display: flex;
+}
+
+div.colors div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  text-align: center;
+  margin: 5px 10px 0 0;
+  transition: border 0.25s;
+}
+
+div.colors div.selected {
+  border: 2px solid #ffffff;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #575757;
+  border-radius: 50%;
+  outline: none;
+  transition: background-color 0.25s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
